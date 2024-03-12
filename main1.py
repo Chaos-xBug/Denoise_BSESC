@@ -792,7 +792,7 @@ def lower_noise_density(mat1, mat2):
 
 img = cv2.imread('src/Lena.bmp', cv2.IMREAD_GRAYSCALE)  #读取灰度图
 #noise_img = cv2.imread('C:/Users/AMDyes/Desktop/noise_img/0.8noise.bmp', cv2.IMREAD_GRAYSCALE)  #读取灰度图
-noise_img = sp_noise(img, 0.5) #添加噪声
+noise_img = sp_noise(img, 0.8) #添加噪声
 padded_img = np.pad(img, ((1, 1), (1, 1)), mode='symmetric')
 h, w = noise_img.shape
 sub_h, sub_w = h // 2, w // 2 # 1/4子图的高宽
